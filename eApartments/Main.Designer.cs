@@ -30,8 +30,20 @@ namespace eApartments
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("1 Bedroom");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("1 Common room");
+            System.Windows.Forms.ListViewItem listViewItem43 = new System.Windows.Forms.ListViewItem("1 Bedroom");
+            System.Windows.Forms.ListViewItem listViewItem44 = new System.Windows.Forms.ListViewItem("1 Common Bathroom");
+            System.Windows.Forms.ListViewItem listViewItem45 = new System.Windows.Forms.ListViewItem("3 Bedrooms");
+            System.Windows.Forms.ListViewItem listViewItem46 = new System.Windows.Forms.ListViewItem("2 Attached Bathroms");
+            System.Windows.Forms.ListViewItem listViewItem47 = new System.Windows.Forms.ListViewItem("1 Common Bathroom");
+            System.Windows.Forms.ListViewItem listViewItem48 = new System.Windows.Forms.ListViewItem("4 Bedrooms");
+            System.Windows.Forms.ListViewItem listViewItem49 = new System.Windows.Forms.ListViewItem("1 Common Bathroom");
+            System.Windows.Forms.ListViewItem listViewItem50 = new System.Windows.Forms.ListViewItem("3 Bathrooms");
+            System.Windows.Forms.ListViewItem listViewItem51 = new System.Windows.Forms.ListViewItem("3 Attached Bathrooms");
+            System.Windows.Forms.ListViewItem listViewItem52 = new System.Windows.Forms.ListViewItem("1 Servant\'s Room");
+            System.Windows.Forms.ListViewItem listViewItem53 = new System.Windows.Forms.ListViewItem("1 Servant\'s Toilet");
+            System.Windows.Forms.ListViewItem listViewItem54 = new System.Windows.Forms.ListViewItem("2 Bedrooms");
+            System.Windows.Forms.ListViewItem listViewItem55 = new System.Windows.Forms.ListViewItem("2 Attached Bathroms");
+            System.Windows.Forms.ListViewItem listViewItem56 = new System.Windows.Forms.ListViewItem("1 Common Bathroom");
             this.panel1 = new System.Windows.Forms.Panel();
             this.linkLogout = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,29 +55,66 @@ namespace eApartments
             this.metroTabCategories = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl4 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabClass1 = new MetroFramework.Controls.MetroTabPage();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.picClass1 = new System.Windows.Forms.PictureBox();
-            this.metroTabClass2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabClass3 = new MetroFramework.Controls.MetroTabPage();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.listBox7 = new System.Windows.Forms.ListBox();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.listBox8 = new System.Windows.Forms.ListBox();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.listBox9 = new System.Windows.Forms.ListBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.metroTabSuite = new MetroFramework.Controls.MetroTabPage();
+            this.listBox10 = new System.Windows.Forms.ListBox();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.listBox11 = new System.Windows.Forms.ListBox();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.listBox12 = new System.Windows.Forms.ListBox();
+            this.listView4 = new System.Windows.Forms.ListView();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.metroTabClass2 = new MetroFramework.Controls.MetroTabPage();
+            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.listBox6 = new System.Windows.Forms.ListBox();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.metroTabControl3 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabApartments = new MetroFramework.Controls.MetroTabPage();
-            this.cobApartmentType = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.txtApartmentValue = new System.Windows.Forms.TextBox();
-            this.txtApartmentAddress = new System.Windows.Forms.TextBox();
+            this.metroBtnWaitingList = new MetroFramework.Controls.MetroButton();
+            this.metroBtnRequestReserve = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroBtnRequestLease = new MetroFramework.Controls.MetroButton();
+            this.txtApartmentStatus = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtApartmentLeaseDuration = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.metroCmbApartments = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
+            this.cmbApartmentType = new System.Windows.Forms.ComboBox();
+            this.txtApartmentBuilding = new System.Windows.Forms.TextBox();
+            this.txtApartmentName = new System.Windows.Forms.TextBox();
             this.txtApartmentNo = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.picAddApartment = new System.Windows.Forms.PictureBox();
-            this.txtApartmentType = new System.Windows.Forms.Label();
+            this.lblApartmentType = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.metroTabTenants = new MetroFramework.Controls.MetroTabPage();
@@ -105,11 +154,13 @@ namespace eApartments
             this.metroTabControl4.SuspendLayout();
             this.metroTabClass1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClass1)).BeginInit();
+            this.metroTabClass3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.metroTabSuite.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.metroTabClass2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.metroTabApartments.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddApartment)).BeginInit();
             this.metroTabTenants.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAddCat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDelete)).BeginInit();
@@ -130,13 +181,13 @@ namespace eApartments
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1960, 100);
+            this.panel1.Size = new System.Drawing.Size(1795, 100);
             this.panel1.TabIndex = 1;
             // 
             // linkLogout
             // 
             this.linkLogout.AutoSize = true;
-            this.linkLogout.Location = new System.Drawing.Point(1857, 35);
+            this.linkLogout.Location = new System.Drawing.Point(1675, 45);
             this.linkLogout.Name = "linkLogout";
             this.linkLogout.Size = new System.Drawing.Size(66, 20);
             this.linkLogout.TabIndex = 6;
@@ -167,15 +218,18 @@ namespace eApartments
             // lblLoggedUser
             // 
             this.lblLoggedUser.AutoSize = true;
-            this.lblLoggedUser.Location = new System.Drawing.Point(1710, 35);
+            this.lblLoggedUser.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoggedUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblLoggedUser.Location = new System.Drawing.Point(1505, 56);
             this.lblLoggedUser.Name = "lblLoggedUser";
-            this.lblLoggedUser.Size = new System.Drawing.Size(0, 20);
+            this.lblLoggedUser.Size = new System.Drawing.Size(69, 35);
             this.lblLoggedUser.TabIndex = 3;
+            this.lblLoggedUser.Text = "Hi !";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1620, 35);
+            this.label1.Location = new System.Drawing.Point(1500, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 2;
@@ -184,7 +238,7 @@ namespace eApartments
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1528, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1383, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -232,12 +286,14 @@ namespace eApartments
             this.metroTabControl4.Controls.Add(this.metroTabSuite);
             this.metroTabControl4.Location = new System.Drawing.Point(21, 18);
             this.metroTabControl4.Name = "metroTabControl4";
-            this.metroTabControl4.SelectedIndex = 0;
+            this.metroTabControl4.SelectedIndex = 3;
             this.metroTabControl4.Size = new System.Drawing.Size(1890, 792);
             this.metroTabControl4.TabIndex = 4;
             // 
             // metroTabClass1
             // 
+            this.metroTabClass1.Controls.Add(this.listBox3);
+            this.metroTabClass1.Controls.Add(this.metroLabel3);
             this.metroTabClass1.Controls.Add(this.listBox2);
             this.metroTabClass1.Controls.Add(this.metroLabel2);
             this.metroTabClass1.Controls.Add(this.metroLabel1);
@@ -253,15 +309,35 @@ namespace eApartments
             this.metroTabClass1.Text = "Class 1";
             this.metroTabClass1.VerticalScrollbarBarColor = true;
             // 
+            // listBox3
+            // 
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 24;
+            this.listBox3.Items.AddRange(new object[] {
+            "* Gymnasium",
+            "* Swimming Pool"});
+            this.listBox3.Location = new System.Drawing.Point(739, 567);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(690, 76);
+            this.listBox3.TabIndex = 9;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(739, 522);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel3.TabIndex = 8;
+            this.metroLabel3.Text = "Other";
+            // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 24;
             this.listBox2.Items.AddRange(new object[] {
             "* Parking Space (Single Vehicle)",
-            "   --- Additional Parking Space is Tollable ",
-            "*"});
-            this.listBox2.Location = new System.Drawing.Point(735, 357);
+            "   --- Additional Parking Space is Tollable "});
+            this.listBox2.Location = new System.Drawing.Point(739, 404);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(690, 76);
             this.listBox2.TabIndex = 7;
@@ -269,7 +345,7 @@ namespace eApartments
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(735, 312);
+            this.metroLabel2.Location = new System.Drawing.Point(739, 359);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(101, 19);
             this.metroLabel2.TabIndex = 6;
@@ -278,7 +354,7 @@ namespace eApartments
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(735, 40);
+            this.metroLabel1.Location = new System.Drawing.Point(739, 87);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(116, 19);
             this.metroLabel1.TabIndex = 5;
@@ -296,9 +372,9 @@ namespace eApartments
             "* Telephone connection",
             "* Broadband Internet connection",
             "* Cable TV connection"});
-            this.listBox1.Location = new System.Drawing.Point(735, 72);
+            this.listBox1.Location = new System.Drawing.Point(739, 119);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(690, 172);
+            this.listBox1.Size = new System.Drawing.Size(690, 196);
             this.listBox1.TabIndex = 4;
             // 
             // listView1
@@ -307,9 +383,9 @@ namespace eApartments
             this.listView1.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
-            this.listView1.Location = new System.Drawing.Point(24, 494);
+            listViewItem43,
+            listViewItem44});
+            this.listView1.Location = new System.Drawing.Point(28, 541);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(554, 169);
             this.listView1.TabIndex = 3;
@@ -319,26 +395,23 @@ namespace eApartments
             // picClass1
             // 
             this.picClass1.Image = ((System.Drawing.Image)(resources.GetObject("picClass1.Image")));
-            this.picClass1.Location = new System.Drawing.Point(24, 40);
+            this.picClass1.Location = new System.Drawing.Point(28, 87);
             this.picClass1.Name = "picClass1";
             this.picClass1.Size = new System.Drawing.Size(554, 411);
             this.picClass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picClass1.TabIndex = 2;
             this.picClass1.TabStop = false;
             // 
-            // metroTabClass2
-            // 
-            this.metroTabClass2.HorizontalScrollbarBarColor = true;
-            this.metroTabClass2.HorizontalScrollbarSize = 9;
-            this.metroTabClass2.Location = new System.Drawing.Point(4, 39);
-            this.metroTabClass2.Name = "metroTabClass2";
-            this.metroTabClass2.Size = new System.Drawing.Size(1882, 749);
-            this.metroTabClass2.TabIndex = 1;
-            this.metroTabClass2.Text = "Class 2";
-            this.metroTabClass2.VerticalScrollbarBarColor = true;
-            // 
             // metroTabClass3
             // 
+            this.metroTabClass3.Controls.Add(this.listView3);
+            this.metroTabClass3.Controls.Add(this.listBox7);
+            this.metroTabClass3.Controls.Add(this.metroLabel7);
+            this.metroTabClass3.Controls.Add(this.listBox8);
+            this.metroTabClass3.Controls.Add(this.metroLabel8);
+            this.metroTabClass3.Controls.Add(this.metroLabel9);
+            this.metroTabClass3.Controls.Add(this.listBox9);
+            this.metroTabClass3.Controls.Add(this.pictureBox6);
             this.metroTabClass3.HorizontalScrollbarBarColor = true;
             this.metroTabClass3.HorizontalScrollbarSize = 9;
             this.metroTabClass3.Location = new System.Drawing.Point(4, 39);
@@ -348,8 +421,110 @@ namespace eApartments
             this.metroTabClass3.Text = "Class 3";
             this.metroTabClass3.VerticalScrollbarBarColor = true;
             // 
+            // listView3
+            // 
+            this.listView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView3.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView3.HideSelection = false;
+            this.listView3.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem45,
+            listViewItem46,
+            listViewItem47});
+            this.listView3.Location = new System.Drawing.Point(34, 553);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(634, 237);
+            this.listView3.TabIndex = 18;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.listView3.View = System.Windows.Forms.View.List;
+            // 
+            // listBox7
+            // 
+            this.listBox7.FormattingEnabled = true;
+            this.listBox7.ItemHeight = 24;
+            this.listBox7.Items.AddRange(new object[] {
+            "* Gymnasium",
+            "* Swimming Pool"});
+            this.listBox7.Location = new System.Drawing.Point(745, 563);
+            this.listBox7.Name = "listBox7";
+            this.listBox7.Size = new System.Drawing.Size(690, 76);
+            this.listBox7.TabIndex = 17;
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.Location = new System.Drawing.Point(745, 518);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel7.TabIndex = 16;
+            this.metroLabel7.Text = "Other";
+            // 
+            // listBox8
+            // 
+            this.listBox8.FormattingEnabled = true;
+            this.listBox8.ItemHeight = 24;
+            this.listBox8.Items.AddRange(new object[] {
+            "* Parking Space (Single Vehicle)",
+            "   --- Additional Parking Space is Tollable "});
+            this.listBox8.Location = new System.Drawing.Point(745, 400);
+            this.listBox8.Name = "listBox8";
+            this.listBox8.Size = new System.Drawing.Size(690, 76);
+            this.listBox8.TabIndex = 15;
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.Location = new System.Drawing.Point(745, 355);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel8.TabIndex = 14;
+            this.metroLabel8.Text = "Default Facilities";
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.Location = new System.Drawing.Point(745, 83);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(116, 19);
+            this.metroLabel9.TabIndex = 13;
+            this.metroLabel9.Text = "Common Facilities";
+            // 
+            // listBox9
+            // 
+            this.listBox9.FormattingEnabled = true;
+            this.listBox9.ItemHeight = 24;
+            this.listBox9.Items.AddRange(new object[] {
+            "* Living & Dining Area",
+            "* Self-contained kichen/pantry unit",
+            "* Laundry Area",
+            "* Balcony",
+            "* Telephone connection",
+            "* Broadband Internet connection",
+            "* Cable TV connection"});
+            this.listBox9.Location = new System.Drawing.Point(745, 115);
+            this.listBox9.Name = "listBox9";
+            this.listBox9.Size = new System.Drawing.Size(690, 196);
+            this.listBox9.TabIndex = 12;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(34, 83);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(554, 411);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
+            // 
             // metroTabSuite
             // 
+            this.metroTabSuite.Controls.Add(this.listBox10);
+            this.metroTabSuite.Controls.Add(this.metroLabel10);
+            this.metroTabSuite.Controls.Add(this.listBox11);
+            this.metroTabSuite.Controls.Add(this.metroLabel11);
+            this.metroTabSuite.Controls.Add(this.metroLabel12);
+            this.metroTabSuite.Controls.Add(this.listBox12);
+            this.metroTabSuite.Controls.Add(this.listView4);
+            this.metroTabSuite.Controls.Add(this.pictureBox7);
             this.metroTabSuite.HorizontalScrollbarBarColor = true;
             this.metroTabSuite.HorizontalScrollbarSize = 9;
             this.metroTabSuite.Location = new System.Drawing.Point(4, 39);
@@ -358,6 +533,216 @@ namespace eApartments
             this.metroTabSuite.TabIndex = 3;
             this.metroTabSuite.Text = "Suite";
             this.metroTabSuite.VerticalScrollbarBarColor = true;
+            // 
+            // listBox10
+            // 
+            this.listBox10.FormattingEnabled = true;
+            this.listBox10.ItemHeight = 24;
+            this.listBox10.Items.AddRange(new object[] {
+            "* Gymnasium",
+            "* Swimming Pool"});
+            this.listBox10.Location = new System.Drawing.Point(750, 563);
+            this.listBox10.Name = "listBox10";
+            this.listBox10.Size = new System.Drawing.Size(690, 76);
+            this.listBox10.TabIndex = 17;
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Location = new System.Drawing.Point(750, 518);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel10.TabIndex = 16;
+            this.metroLabel10.Text = "Other";
+            // 
+            // listBox11
+            // 
+            this.listBox11.FormattingEnabled = true;
+            this.listBox11.ItemHeight = 24;
+            this.listBox11.Items.AddRange(new object[] {
+            "* Parking Space (Single Vehicle)",
+            "   --- Additional Parking Space is Tollable "});
+            this.listBox11.Location = new System.Drawing.Point(750, 400);
+            this.listBox11.Name = "listBox11";
+            this.listBox11.Size = new System.Drawing.Size(690, 76);
+            this.listBox11.TabIndex = 15;
+            // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.Location = new System.Drawing.Point(750, 355);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel11.TabIndex = 14;
+            this.metroLabel11.Text = "Default Facilities";
+            // 
+            // metroLabel12
+            // 
+            this.metroLabel12.AutoSize = true;
+            this.metroLabel12.Location = new System.Drawing.Point(750, 83);
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.Size = new System.Drawing.Size(116, 19);
+            this.metroLabel12.TabIndex = 13;
+            this.metroLabel12.Text = "Common Facilities";
+            // 
+            // listBox12
+            // 
+            this.listBox12.FormattingEnabled = true;
+            this.listBox12.ItemHeight = 24;
+            this.listBox12.Items.AddRange(new object[] {
+            "* Living & Dining Area",
+            "* Self-contained kichen/pantry unit",
+            "* Laundry Area",
+            "* Balcony",
+            "* Telephone connection",
+            "* Broadband Internet connection",
+            "* Cable TV connection"});
+            this.listBox12.Location = new System.Drawing.Point(750, 115);
+            this.listBox12.Name = "listBox12";
+            this.listBox12.Size = new System.Drawing.Size(690, 196);
+            this.listBox12.TabIndex = 12;
+            // 
+            // listView4
+            // 
+            this.listView4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView4.Font = new System.Drawing.Font("Perpetua Titling MT", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView4.HideSelection = false;
+            this.listView4.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem48,
+            listViewItem49,
+            listViewItem50,
+            listViewItem51,
+            listViewItem52,
+            listViewItem53});
+            this.listView4.Location = new System.Drawing.Point(39, 518);
+            this.listView4.Name = "listView4";
+            this.listView4.Size = new System.Drawing.Size(554, 303);
+            this.listView4.TabIndex = 11;
+            this.listView4.UseCompatibleStateImageBehavior = false;
+            this.listView4.View = System.Windows.Forms.View.List;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(39, 83);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(554, 411);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
+            // 
+            // metroTabClass2
+            // 
+            this.metroTabClass2.Controls.Add(this.listBox4);
+            this.metroTabClass2.Controls.Add(this.metroLabel4);
+            this.metroTabClass2.Controls.Add(this.listBox5);
+            this.metroTabClass2.Controls.Add(this.metroLabel5);
+            this.metroTabClass2.Controls.Add(this.metroLabel6);
+            this.metroTabClass2.Controls.Add(this.listBox6);
+            this.metroTabClass2.Controls.Add(this.listView2);
+            this.metroTabClass2.Controls.Add(this.pictureBox5);
+            this.metroTabClass2.HorizontalScrollbarBarColor = true;
+            this.metroTabClass2.HorizontalScrollbarSize = 9;
+            this.metroTabClass2.Location = new System.Drawing.Point(4, 39);
+            this.metroTabClass2.Name = "metroTabClass2";
+            this.metroTabClass2.Size = new System.Drawing.Size(1882, 749);
+            this.metroTabClass2.TabIndex = 1;
+            this.metroTabClass2.Text = "Class 2";
+            this.metroTabClass2.VerticalScrollbarBarColor = true;
+            // 
+            // listBox4
+            // 
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.ItemHeight = 24;
+            this.listBox4.Items.AddRange(new object[] {
+            "* Gymnasium",
+            "* Swimming Pool"});
+            this.listBox4.Location = new System.Drawing.Point(733, 572);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(690, 76);
+            this.listBox4.TabIndex = 17;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(733, 527);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel4.TabIndex = 16;
+            this.metroLabel4.Text = "Other";
+            // 
+            // listBox5
+            // 
+            this.listBox5.FormattingEnabled = true;
+            this.listBox5.ItemHeight = 24;
+            this.listBox5.Items.AddRange(new object[] {
+            "* Parking Space (Single Vehicle)",
+            "   --- Additional Parking Space is Tollable "});
+            this.listBox5.Location = new System.Drawing.Point(733, 409);
+            this.listBox5.Name = "listBox5";
+            this.listBox5.Size = new System.Drawing.Size(690, 76);
+            this.listBox5.TabIndex = 15;
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(733, 364);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel5.TabIndex = 14;
+            this.metroLabel5.Text = "Default Facilities";
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.Location = new System.Drawing.Point(733, 92);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(116, 19);
+            this.metroLabel6.TabIndex = 13;
+            this.metroLabel6.Text = "Common Facilities";
+            // 
+            // listBox6
+            // 
+            this.listBox6.FormattingEnabled = true;
+            this.listBox6.ItemHeight = 24;
+            this.listBox6.Items.AddRange(new object[] {
+            "* Living & Dining Area",
+            "* Self-contained kichen/pantry unit",
+            "* Laundry Area",
+            "* Balcony",
+            "* Telephone connection",
+            "* Broadband Internet connection",
+            "* Cable TV connection"});
+            this.listBox6.Location = new System.Drawing.Point(733, 124);
+            this.listBox6.Name = "listBox6";
+            this.listBox6.Size = new System.Drawing.Size(690, 196);
+            this.listBox6.TabIndex = 12;
+            // 
+            // listView2
+            // 
+            this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView2.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView2.HideSelection = false;
+            this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem54,
+            listViewItem55,
+            listViewItem56});
+            this.listView2.Location = new System.Drawing.Point(22, 546);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(634, 237);
+            this.listView2.TabIndex = 11;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.List;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(22, 92);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(554, 411);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
             // 
             // metroTabControl3
             // 
@@ -376,17 +761,28 @@ namespace eApartments
             // metroTabApartments
             // 
             this.metroTabApartments.BackColor = System.Drawing.SystemColors.Window;
-            this.metroTabApartments.Controls.Add(this.cobApartmentType);
-            this.metroTabApartments.Controls.Add(this.pictureBox2);
-            this.metroTabApartments.Controls.Add(this.pictureBox3);
-            this.metroTabApartments.Controls.Add(this.label10);
-            this.metroTabApartments.Controls.Add(this.dataGridView2);
-            this.metroTabApartments.Controls.Add(this.txtApartmentValue);
-            this.metroTabApartments.Controls.Add(this.txtApartmentAddress);
+            this.metroTabApartments.Controls.Add(this.metroBtnWaitingList);
+            this.metroTabApartments.Controls.Add(this.metroBtnRequestReserve);
+            this.metroTabApartments.Controls.Add(this.metroButton1);
+            this.metroTabApartments.Controls.Add(this.metroBtnRequestLease);
+            this.metroTabApartments.Controls.Add(this.txtApartmentStatus);
+            this.metroTabApartments.Controls.Add(this.label24);
+            this.metroTabApartments.Controls.Add(this.txtApartmentLeaseDuration);
+            this.metroTabApartments.Controls.Add(this.label23);
+            this.metroTabApartments.Controls.Add(this.textBox3);
+            this.metroTabApartments.Controls.Add(this.label22);
+            this.metroTabApartments.Controls.Add(this.textBox2);
+            this.metroTabApartments.Controls.Add(this.label21);
+            this.metroTabApartments.Controls.Add(this.textBox1);
+            this.metroTabApartments.Controls.Add(this.label20);
+            this.metroTabApartments.Controls.Add(this.metroCmbApartments);
+            this.metroTabApartments.Controls.Add(this.metroLabel13);
+            this.metroTabApartments.Controls.Add(this.cmbApartmentType);
+            this.metroTabApartments.Controls.Add(this.txtApartmentBuilding);
+            this.metroTabApartments.Controls.Add(this.txtApartmentName);
             this.metroTabApartments.Controls.Add(this.txtApartmentNo);
             this.metroTabApartments.Controls.Add(this.label12);
-            this.metroTabApartments.Controls.Add(this.picAddApartment);
-            this.metroTabApartments.Controls.Add(this.txtApartmentType);
+            this.metroTabApartments.Controls.Add(this.lblApartmentType);
             this.metroTabApartments.Controls.Add(this.label14);
             this.metroTabApartments.Controls.Add(this.label15);
             this.metroTabApartments.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -399,72 +795,174 @@ namespace eApartments
             this.metroTabApartments.Text = "Apartments";
             this.metroTabApartments.VerticalScrollbarBarColor = true;
             // 
-            // cobApartmentType
+            // metroBtnWaitingList
             // 
-            this.cobApartmentType.FormattingEnabled = true;
-            this.cobApartmentType.Location = new System.Drawing.Point(654, 75);
-            this.cobApartmentType.Name = "cobApartmentType";
-            this.cobApartmentType.Size = new System.Drawing.Size(290, 32);
-            this.cobApartmentType.TabIndex = 57;
+            this.metroBtnWaitingList.Location = new System.Drawing.Point(1409, 432);
+            this.metroBtnWaitingList.Name = "metroBtnWaitingList";
+            this.metroBtnWaitingList.Size = new System.Drawing.Size(153, 65);
+            this.metroBtnWaitingList.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnWaitingList.TabIndex = 73;
+            this.metroBtnWaitingList.Text = "Request for Waiting List";
+            this.metroBtnWaitingList.Click += new System.EventHandler(this.metroBtnWaitingList_Click);
             // 
-            // pictureBox2
+            // metroBtnRequestReserve
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(272, 182);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 56;
-            this.pictureBox2.TabStop = false;
+            this.metroBtnRequestReserve.Location = new System.Drawing.Point(1242, 432);
+            this.metroBtnRequestReserve.Name = "metroBtnRequestReserve";
+            this.metroBtnRequestReserve.Size = new System.Drawing.Size(146, 65);
+            this.metroBtnRequestReserve.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnRequestReserve.TabIndex = 72;
+            this.metroBtnRequestReserve.Text = "Request Reserve";
+            this.metroBtnRequestReserve.Click += new System.EventHandler(this.metroBtnRequestReserve_Click);
             // 
-            // pictureBox3
+            // metroButton1
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(192, 182);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 55;
-            this.pictureBox3.TabStop = false;
+            this.metroButton1.Location = new System.Drawing.Point(9864, 4048);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(147, 65);
+            this.metroButton1.TabIndex = 71;
+            this.metroButton1.Text = "Request Lease";
             // 
-            // label10
+            // metroBtnRequestLease
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.Window;
-            this.label10.Font = new System.Drawing.Font("MS Gothic", 9F);
-            this.label10.Location = new System.Drawing.Point(20, 197);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(143, 18);
-            this.label10.TabIndex = 54;
-            this.label10.Text = "Apartments List";
+            this.metroBtnRequestLease.Location = new System.Drawing.Point(1072, 432);
+            this.metroBtnRequestLease.Name = "metroBtnRequestLease";
+            this.metroBtnRequestLease.Size = new System.Drawing.Size(147, 65);
+            this.metroBtnRequestLease.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnRequestLease.TabIndex = 70;
+            this.metroBtnRequestLease.Text = "Request Lease";
+            this.metroBtnRequestLease.Click += new System.EventHandler(this.metroBtnRequestLease_Click);
             // 
-            // dataGridView2
+            // txtApartmentStatus
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(4, 238);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(1926, 592);
-            this.dataGridView2.TabIndex = 53;
+            this.txtApartmentStatus.Location = new System.Drawing.Point(1528, 146);
+            this.txtApartmentStatus.Name = "txtApartmentStatus";
+            this.txtApartmentStatus.Size = new System.Drawing.Size(155, 32);
+            this.txtApartmentStatus.TabIndex = 69;
             // 
-            // txtApartmentValue
+            // label24
             // 
-            this.txtApartmentValue.Location = new System.Drawing.Point(968, 78);
-            this.txtApartmentValue.Name = "txtApartmentValue";
-            this.txtApartmentValue.Size = new System.Drawing.Size(292, 32);
-            this.txtApartmentValue.TabIndex = 52;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(1541, 106);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(64, 24);
+            this.label24.TabIndex = 68;
+            this.label24.Text = "Status";
             // 
-            // txtApartmentAddress
+            // txtApartmentLeaseDuration
             // 
-            this.txtApartmentAddress.Location = new System.Drawing.Point(338, 78);
-            this.txtApartmentAddress.Name = "txtApartmentAddress";
-            this.txtApartmentAddress.Size = new System.Drawing.Size(292, 32);
-            this.txtApartmentAddress.TabIndex = 48;
+            this.txtApartmentLeaseDuration.Location = new System.Drawing.Point(1279, 147);
+            this.txtApartmentLeaseDuration.Name = "txtApartmentLeaseDuration";
+            this.txtApartmentLeaseDuration.Size = new System.Drawing.Size(223, 32);
+            this.txtApartmentLeaseDuration.TabIndex = 67;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(1292, 107);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(140, 24);
+            this.label23.TabIndex = 66;
+            this.label23.Text = "Lease Duration";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(9807, 4102);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(292, 32);
+            this.textBox3.TabIndex = 65;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.SystemColors.Window;
+            this.label22.Font = new System.Drawing.Font("MS Gothic", 9F);
+            this.label22.Location = new System.Drawing.Point(9819, 4059);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(53, 18);
+            this.label22.TabIndex = 64;
+            this.label22.Text = "Value";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(9799, 4094);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(292, 32);
+            this.textBox2.TabIndex = 63;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.SystemColors.Window;
+            this.label21.Font = new System.Drawing.Font("MS Gothic", 9F);
+            this.label21.Location = new System.Drawing.Point(9811, 4051);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 18);
+            this.label21.TabIndex = 62;
+            this.label21.Text = "Value";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(9791, 4086);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(292, 32);
+            this.textBox1.TabIndex = 61;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.SystemColors.Window;
+            this.label20.Font = new System.Drawing.Font("MS Gothic", 9F);
+            this.label20.Location = new System.Drawing.Point(9803, 4043);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 18);
+            this.label20.TabIndex = 60;
+            this.label20.Text = "Value";
+            // 
+            // metroCmbApartments
+            // 
+            this.metroCmbApartments.FormattingEnabled = true;
+            this.metroCmbApartments.ItemHeight = 23;
+            this.metroCmbApartments.Location = new System.Drawing.Point(233, 35);
+            this.metroCmbApartments.Name = "metroCmbApartments";
+            this.metroCmbApartments.Size = new System.Drawing.Size(325, 29);
+            this.metroCmbApartments.TabIndex = 59;
+            this.metroCmbApartments.SelectedIndexChanged += new System.EventHandler(this.metroCmbApartments_SelectedIndexChanged);
+            // 
+            // metroLabel13
+            // 
+            this.metroLabel13.AutoSize = true;
+            this.metroLabel13.Location = new System.Drawing.Point(26, 35);
+            this.metroLabel13.Name = "metroLabel13";
+            this.metroLabel13.Size = new System.Drawing.Size(111, 19);
+            this.metroLabel13.TabIndex = 58;
+            this.metroLabel13.Text = "Select Apartment";
+            // 
+            // cmbApartmentType
+            // 
+            this.cmbApartmentType.FormattingEnabled = true;
+            this.cmbApartmentType.Location = new System.Drawing.Point(970, 147);
+            this.cmbApartmentType.Name = "cmbApartmentType";
+            this.cmbApartmentType.Size = new System.Drawing.Size(290, 32);
+            this.cmbApartmentType.TabIndex = 57;
+            // 
+            // txtApartmentBuilding
+            // 
+            this.txtApartmentBuilding.Location = new System.Drawing.Point(654, 147);
+            this.txtApartmentBuilding.Name = "txtApartmentBuilding";
+            this.txtApartmentBuilding.Size = new System.Drawing.Size(292, 32);
+            this.txtApartmentBuilding.TabIndex = 52;
+            // 
+            // txtApartmentName
+            // 
+            this.txtApartmentName.Location = new System.Drawing.Point(338, 147);
+            this.txtApartmentName.Name = "txtApartmentName";
+            this.txtApartmentName.Size = new System.Drawing.Size(292, 32);
+            this.txtApartmentName.TabIndex = 48;
             // 
             // txtApartmentNo
             // 
-            this.txtApartmentNo.Location = new System.Drawing.Point(26, 78);
+            this.txtApartmentNo.Location = new System.Drawing.Point(26, 147);
             this.txtApartmentNo.Name = "txtApartmentNo";
             this.txtApartmentNo.Size = new System.Drawing.Size(292, 32);
             this.txtApartmentNo.TabIndex = 46;
@@ -474,50 +972,40 @@ namespace eApartments
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.Window;
             this.label12.Font = new System.Drawing.Font("MS Gothic", 9F);
-            this.label12.Location = new System.Drawing.Point(980, 35);
+            this.label12.Location = new System.Drawing.Point(666, 104);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 18);
+            this.label12.Size = new System.Drawing.Size(80, 18);
             this.label12.TabIndex = 51;
-            this.label12.Text = "Value";
+            this.label12.Text = "Building";
             // 
-            // picAddApartment
+            // lblApartmentType
             // 
-            this.picAddApartment.Image = ((System.Drawing.Image)(resources.GetObject("picAddApartment.Image")));
-            this.picAddApartment.Location = new System.Drawing.Point(1312, 62);
-            this.picAddApartment.Name = "picAddApartment";
-            this.picAddApartment.Size = new System.Drawing.Size(70, 60);
-            this.picAddApartment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAddApartment.TabIndex = 50;
-            this.picAddApartment.TabStop = false;
-            // 
-            // txtApartmentType
-            // 
-            this.txtApartmentType.AutoSize = true;
-            this.txtApartmentType.BackColor = System.Drawing.SystemColors.Window;
-            this.txtApartmentType.Font = new System.Drawing.Font("MS Gothic", 9F);
-            this.txtApartmentType.Location = new System.Drawing.Point(664, 35);
-            this.txtApartmentType.Name = "txtApartmentType";
-            this.txtApartmentType.Size = new System.Drawing.Size(44, 18);
-            this.txtApartmentType.TabIndex = 49;
-            this.txtApartmentType.Text = "Type";
+            this.lblApartmentType.AutoSize = true;
+            this.lblApartmentType.BackColor = System.Drawing.SystemColors.Window;
+            this.lblApartmentType.Font = new System.Drawing.Font("MS Gothic", 9F);
+            this.lblApartmentType.Location = new System.Drawing.Point(990, 107);
+            this.lblApartmentType.Name = "lblApartmentType";
+            this.lblApartmentType.Size = new System.Drawing.Size(44, 18);
+            this.lblApartmentType.TabIndex = 49;
+            this.lblApartmentType.Text = "Type";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.Window;
             this.label14.Font = new System.Drawing.Font("MS Gothic", 9F);
-            this.label14.Location = new System.Drawing.Point(348, 35);
+            this.label14.Location = new System.Drawing.Point(348, 104);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(71, 18);
+            this.label14.Size = new System.Drawing.Size(44, 18);
             this.label14.TabIndex = 47;
-            this.label14.Text = "Address";
+            this.label14.Text = "Name";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.Window;
             this.label15.Font = new System.Drawing.Font("MS Gothic", 9F);
-            this.label15.Location = new System.Drawing.Point(36, 35);
+            this.label15.Location = new System.Drawing.Point(36, 104);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(62, 18);
             this.label15.TabIndex = 45;
@@ -599,12 +1087,13 @@ namespace eApartments
             // 
             // dgvTenants
             // 
+            this.dgvTenants.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTenants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTenants.Location = new System.Drawing.Point(2, 231);
             this.dgvTenants.Name = "dgvTenants";
             this.dgvTenants.RowHeadersWidth = 62;
             this.dgvTenants.RowTemplate.Height = 28;
-            this.dgvTenants.Size = new System.Drawing.Size(1926, 621);
+            this.dgvTenants.Size = new System.Drawing.Size(1720, 621);
             this.dgvTenants.TabIndex = 39;
             this.dgvTenants.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTenants_CellContentClick);
             // 
@@ -853,12 +1342,12 @@ namespace eApartments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1969, 1138);
+            this.ClientSize = new System.Drawing.Size(1793, 1032);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
@@ -870,12 +1359,17 @@ namespace eApartments
             this.metroTabClass1.ResumeLayout(false);
             this.metroTabClass1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClass1)).EndInit();
+            this.metroTabClass3.ResumeLayout(false);
+            this.metroTabClass3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.metroTabSuite.ResumeLayout(false);
+            this.metroTabSuite.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.metroTabClass2.ResumeLayout(false);
+            this.metroTabClass2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.metroTabApartments.ResumeLayout(false);
             this.metroTabApartments.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddApartment)).EndInit();
             this.metroTabTenants.ResumeLayout(false);
             this.metroTabTenants.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAddCat)).EndInit();
@@ -900,17 +1394,12 @@ namespace eApartments
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabCategories;
         private MetroFramework.Controls.MetroTabPage metroTabApartments;
-        private System.Windows.Forms.ComboBox cobApartmentType;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox txtApartmentValue;
-        private System.Windows.Forms.TextBox txtApartmentAddress;
+        private System.Windows.Forms.ComboBox cmbApartmentType;
+        private System.Windows.Forms.TextBox txtApartmentBuilding;
+        private System.Windows.Forms.TextBox txtApartmentName;
         private System.Windows.Forms.TextBox txtApartmentNo;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox picAddApartment;
-        private System.Windows.Forms.Label txtApartmentType;
+        private System.Windows.Forms.Label lblApartmentType;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private MetroFramework.Controls.MetroTabPage metroTabTenants;
@@ -956,5 +1445,47 @@ namespace eApartments
         private MetroFramework.Controls.MetroTabPage metroTabClass2;
         private MetroFramework.Controls.MetroTabPage metroTabClass3;
         private MetroFramework.Controls.MetroTabPage metroTabSuite;
+        private System.Windows.Forms.ListBox listBox3;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private System.Windows.Forms.ListBox listBox4;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private System.Windows.Forms.ListBox listBox5;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
+        private System.Windows.Forms.ListBox listBox6;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ListBox listBox7;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private System.Windows.Forms.ListBox listBox8;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private System.Windows.Forms.ListBox listBox9;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.ListBox listBox10;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private System.Windows.Forms.ListBox listBox11;
+        private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroLabel metroLabel12;
+        private System.Windows.Forms.ListBox listBox12;
+        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private MetroFramework.Controls.MetroComboBox metroCmbApartments;
+        private MetroFramework.Controls.MetroLabel metroLabel13;
+        private System.Windows.Forms.TextBox txtApartmentStatus;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtApartmentLeaseDuration;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label20;
+        private MetroFramework.Controls.MetroButton metroBtnRequestLease;
+        private MetroFramework.Controls.MetroButton metroBtnWaitingList;
+        private MetroFramework.Controls.MetroButton metroBtnRequestReserve;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -8,7 +9,6 @@ namespace eApartments
     public partial class frmMain : Form
     {
         public static frmMain frmMainInstance;
-        SqlConnection con;
         string connection = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnnection"].ConnectionString;
         int key = 0;
 
@@ -20,6 +20,8 @@ namespace eApartments
         private void frmMain_Load(object sender, System.EventArgs e)
         {
             metroTabCategories.Hide();
+
+            lblLoggedUser.Text = LoginInfo.UserName + " (" + LoginInfo.UserRole + ")";
             //LoadTenants();
         }
 
@@ -116,6 +118,10 @@ namespace eApartments
                 ClearFields();
                 LoadTenants();
             }
+            else if (metroTabControl1.SelectedTab.Name == "metroTabApartments")
+            {
+                LoadApartments();
+            }
         }
 
         private void dgvTenants_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -201,6 +207,102 @@ namespace eApartments
             }
         }
 
-       
+        public void LoadApartments()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connection);
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                string query = "select * from Apartment";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                var ds = new DataSet();
+                sda.Fill(ds);
+                metroCmbApartments.DataSource = ds.Tables[0];
+                metroCmbApartments.DisplayMember = "Name";
+                metroCmbApartments.ValueMember = "Id";
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+            //var list = (from row in ds.Tables[0].AsEnumerable() select Convert.ToString(row["Name"]))
+            //return ds.Tables[0].AsEnumerable().Select(x => x[2].ToString());
+        }
+
+        private void metroCmbApartments_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            object selectedItem = metroCmbApartments.SelectedItem;
+            DataRow row = ((DataRowView)selectedItem).Row;
+            var selectedValue = Convert.ToInt32(row[0].ToString());
+            try
+            {
+                SqlConnection con = new SqlConnection(connection);
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                string query = "select * from Apartment where Id = @Key";
+                SqlCommand command = new SqlCommand(query, con) { CommandType = CommandType.Text };
+                SqlDataReader sReader;
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@Key", selectedValue);
+                sReader = command.ExecuteReader();
+
+                LoadCategories();
+                while (sReader.Read())
+                {
+                    txtApartmentNo.Text = sReader["Number"].ToString();
+                    txtApartmentName.Text = sReader["Name"].ToString();
+                    txtApartmentBuilding.Text = sReader["Building"].ToString();
+                    cmbApartmentType.SelectedValue = sReader["CategoryId"].ToString();
+                    txtApartmentLeaseDuration.Text = sReader["LeaseDuration"].ToString();
+                    txtApartmentStatus.Text = sReader["Status"].ToString();
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void LoadCategories()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connection);
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                string query = "select * from Category";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                var ds = new DataSet();
+                sda.Fill(ds);
+                cmbApartmentType.DataSource = ds.Tables[0];
+                cmbApartmentType.DisplayMember = "Description";
+                cmbApartmentType.ValueMember = "Id";
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void metroBtnRequestLease_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroBtnRequestReserve_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroBtnWaitingList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
