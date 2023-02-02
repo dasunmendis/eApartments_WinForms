@@ -92,5 +92,16 @@ namespace eApartments
             return ds;
         }
 
+        private void btnBackToLogin_Click(object sender, EventArgs e)
+        {
+            frmSignupInstance = this;
+
+            WindowState = FormWindowState.Minimized;
+            ShowInTaskbar = false;
+            Visible = false;
+
+            var formLogin = new frmLogin();
+            formLogin.Show();
+        }
     }
 }

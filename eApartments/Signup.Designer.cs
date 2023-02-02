@@ -40,12 +40,13 @@ namespace eApartments
             this.label5 = new System.Windows.Forms.Label();
             this.txtSignupName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnBackToLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSignupSubmit
             // 
             this.btnSignupSubmit.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignupSubmit.Location = new System.Drawing.Point(183, 518);
+            this.btnSignupSubmit.Location = new System.Drawing.Point(95, 518);
             this.btnSignupSubmit.Name = "btnSignupSubmit";
             this.btnSignupSubmit.Size = new System.Drawing.Size(188, 48);
             this.btnSignupSubmit.TabIndex = 16;
@@ -142,11 +143,22 @@ namespace eApartments
             this.label6.TabIndex = 19;
             this.label6.Text = "Name";
             // 
+            // btnBackToLogin
+            // 
+            this.btnBackToLogin.Location = new System.Drawing.Point(300, 517);
+            this.btnBackToLogin.Name = "btnBackToLogin";
+            this.btnBackToLogin.Size = new System.Drawing.Size(102, 49);
+            this.btnBackToLogin.TabIndex = 21;
+            this.btnBackToLogin.Text = "Back";
+            this.btnBackToLogin.UseVisualStyleBackColor = true;
+            this.btnBackToLogin.Click += new System.EventHandler(this.btnBackToLogin_Click);
+            // 
             // frmSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 595);
+            this.Controls.Add(this.btnBackToLogin);
             this.Controls.Add(this.txtSignupName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSignupEmail);
@@ -177,5 +189,6 @@ namespace eApartments
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSignupName;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnBackToLogin;
     }
 }
